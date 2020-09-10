@@ -1,6 +1,6 @@
 # Music Tags App
 
-Simple NodeJs app to fill in music informations.
+Simple NodeJs app to fill in music informations using [Deezer API](https://developers.deezer.com/).
 
 ## Usage
 
