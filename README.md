@@ -2,6 +2,12 @@
 
 Simple NodeJs app to fill in music informations.
 
+## Usage
+
+```
+npm start <filename|directory>
+```
+
 ## TODOs
 
 * Make NodeID3 funcs promise style
