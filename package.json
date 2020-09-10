@@ -1,0 +1,30 @@
+{
+  "name": "tag-music",
+  "version": "1.0.0",
+  "description": "Simple console app to fill music tags in MP3 files",
+  "author": "Chriptus <amcmmm13@hotmail.com> (https://github.com/chriptus13)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriptus13/TagMusic"
+  },
+  "keywords": ["Music", "Tags", "MP3", "ID3"],
+  "bugs": {
+    "url": "https://github.com/chriptus13/TagMusic/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel-node",
+    "start": "babel-node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-id3": "^0.1.17",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
