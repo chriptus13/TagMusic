@@ -1,4 +1,4 @@
-import NodeID3 from 'node-id3'
+import NodeID3 from 'node-id3-promise'
 import axios from 'axios'
 import { promises as fs, createWriteStream } from 'fs'
 import path from 'path'
@@ -73,11 +73,10 @@ async function processFile(file = '') {
             APIC: imgFile
         }
 
-        NodeID3.update(tags, file, err => {
-            if (err) console.error(err)
-            // Delete image file - TODO make NodeID3 funcs promise style
-            fs.unlink(imgFile)
-        })
+        await NodeID3.write(tags, file)
+
+        // Delete image file
+        await fs.unlink(imgFile)
     } catch (err) {
         console.error(err)
     }
